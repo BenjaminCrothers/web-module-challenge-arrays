@@ -67,13 +67,13 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(array){
-   if(is31Flavors.length===31){
-        return true;
-   }else if(is31Flavors.length!==31){
-       return false;
-   }
-}
-is31Flavors(originalFlavors)
+    if(array.length==31){
+         return true;
+    }else if(array.length!=31){
+        return false;
+    }
+ }
+ is31Flavors(originalFlavors)
 
 
 
