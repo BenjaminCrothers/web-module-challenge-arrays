@@ -92,9 +92,9 @@ Use the addFlavor function below to do the following:
 
 function addFlavor(array,flavor){
     array.unshift(flavor);
-    console.log(array);
+    return array;
 }
-addFlavor("Rainbow Sherbert", originalFlavors)
+addFlavor(originalFlavors,"Rainbow Sherbert")
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
