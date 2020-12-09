@@ -108,11 +108,11 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(array,index){
-    return array[index];
-
+function removeLastFlavor(array){
+    array.pop();
+    return array;
 }
-console.log("Task 5:",getFlavorByIndex(originalFlavors))
+removeLastFlavor(originalFlavors)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
