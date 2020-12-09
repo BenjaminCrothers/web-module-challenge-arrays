@@ -45,10 +45,10 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(array){
+// function copy(array){
     const newFlavors=[...originalFlavors];
-    return newFlavors;
-}
+//     return newFlavors;
+// }
 console.log(newFlavors);
 
 
@@ -66,9 +66,16 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(array){
+   if(is31Flavors.length===31){
+        return true;
+   }else if(is31Flavors.length!==31){
+       return false;
+   }
 }
+is31Flavors(originalFlavors)
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -83,9 +90,11 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(array,flavor){
+    array.unshift(flavor);
+    console.log(array);
 }
+addFlavor("Rainbow Sherbert", originalFlavors)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -117,8 +126,8 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(number){
+
 }
 
 
@@ -137,10 +146,12 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(array,string){
+    for(i=0;i<array.length;i++){
+      if(array[i].match(string)) return array;
+    }
 }
-
+removeFlavorByName(originalFlavors,"Rocky Road")
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
